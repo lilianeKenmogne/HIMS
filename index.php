@@ -35,7 +35,7 @@
           <li><a class="nav-link scrollto" href="#services">Services</a></li>
           <li><a class="nav-link scrollto" href="#doctors">Personnel Soignant</a></li>
           <li><a class="nav-link scrollto" href="#contact">Nous Contacter</a></li>
-          <li><a class="nav-link scrollto connexion" href="#">se connecter</a></li>
+          <li><a class="nav-link scrollto connexion" href="login.php">se connecter</a></li>
 
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
