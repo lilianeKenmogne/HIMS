@@ -18,19 +18,19 @@ include('includes/head.php');
 
             <nav id="navbar" class="navbar order-last order-lg-0">
                 <ul>
-                    <li><a class="nav-link scrollto active" href="#hero">Accueil</a></li>
-                    <li><a class="nav-link scrollto" href="#event-list">Actualités</a></li>
-                    <li><a class="nav-link scrollto" href="#departments">Specialités</a></li>
-                    <li><a class="nav-link scrollto" href="#services">Services</a></li>
-                    <li><a class="nav-link scrollto" href="#doctors">Personnel Soignant</a></li>
-                    <li><a class="nav-link scrollto" href="#contact">Nous Contacter</a></li>
-                    <li><a class="nav-link scrollto connexion" href="#">se connecter</a></li>
+                    <li><a class="nav-link scrollto active" href="index.php#hero">Accueil</a></li>
+                    <li><a class="nav-link scrollto" href="index.php#event-list">Actualités</a></li>
+                    <li><a class="nav-link scrollto" href="index.php#departments">Specialités</a></li>
+                    <li><a class="nav-link scrollto" href="index.php#services">Services</a></li>
+                    <li><a class="nav-link scrollto" href="index.php#doctors">Personnel Soignant</a></li>
+                    <li><a class="nav-link scrollto" href="index.php#contact">Nous Contacter</a></li>
+                    <li><a class="nav-link scrollto connexion" href="login.php">se connecter</a></li>
 
                 </ul>
                 <i class="bi bi-list mobile-nav-toggle"></i>
             </nav><!-- .navbar -->
 
-            <a href="#appointment" class="appointment-btn scrollto"><span class="d-none d-md-inline"> </span>Réserver
+            <a href="#" class="appointment-btn scrollto"><span class="d-none d-md-inline"> </span>Réserver
                 une consultation</a>
 
         </div>

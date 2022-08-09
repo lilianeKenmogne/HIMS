@@ -1,5 +1,5 @@
 <?php
-require('database.php');
+require('actions/database.php');
 if (isset($_POST['valider'])) {
 
     if (!empty($_POST['name']) and !empty($_POST['telephone']) and !empty($_POST['date'])) {
@@ -7,7 +7,8 @@ if (isset($_POST['valider'])) {
         $nom_visiteur = htmlspecialchars($_POST['name']);
         $tel_visiteur = htmlspecialchars($_POST['telephone']);
         $date_rdv = $_POST['date'];
-        $date_jour_courant = date('d/m/Y');
+
+
 
         $enregistrerVisiteur = $bdd->prepare('INSERT INTO visiteur(nom_visiteur,tel_visiteur) VALUES(?,?)');
         $enregistrerVisiteur->execute(array($nom_visiteur, $tel_visiteur));
