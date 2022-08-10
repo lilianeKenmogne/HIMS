@@ -1,5 +1,5 @@
 <?php
-require('actions/rdv/database.php');
+require('actions/database.php');
 
 if (isset($_POST['valider'])) {
 

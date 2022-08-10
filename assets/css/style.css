@@ -1597,3 +1597,8 @@ section {
   color: #fff;
   text-decoration: none;
 }
+
+.motif {
+  background-color: white !important;
+  color: black !important;
+}
