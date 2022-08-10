@@ -473,6 +473,20 @@ h6 {
   background-size: cover;
   margin-bottom: 20px;
 }
+#hero1 {
+  width: 100%;
+  height: 90vh;
+  background: url("../img/about.jpg") top center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
+#hero2 {
+  width: 100%;
+  height: 90vh;
+  background: url("../img/departments-5.jpg") top center;
+  background-size: cover;
+  margin-bottom: 20px;
+}
 
 #hero .container {
   position: relative;
@@ -1599,6 +1613,10 @@ section {
 }
 
 .motif {
-  background-color: white !important;
+  background-color: white;
   color: black !important;
+  border-radius: 12%;
+  align-items: center;
+  justify-content: center;
+  margin:10px;
 }
