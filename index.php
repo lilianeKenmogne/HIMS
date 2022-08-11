@@ -2,6 +2,73 @@
 <html lang="en">
 <?php include('includes/head.php'); ?>
 
+<style> 
+
+.hero1 h1 {
+  margin: 0;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 56px;
+  text-transform: uppercase;
+  color: #2c4964;
+}
+
+.hero1 h2 {
+  color: #2c4964;
+  margin: 10px 0 0 0;
+  font-size: 24px;
+}
+
+.hero1 .btn-get-started {
+  font-family: "Raleway", sans-serif;
+  text-transform: uppercase;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 35px;
+  margin-top: 30px;
+  border-radius: 50px;
+  transition: 0.5s;
+  color: #fff;
+  background: #1977cc;
+}
+
+#hero1 .btn-get-started:hover {
+  background: #3291e6;
+}
+
+@media (min-width: 1024px) {
+  .hero1 {
+    background-attachment: fixed;
+  }
+}
+
+@media (max-width: 992px) {
+  .hero1 {
+    margin-bottom: 0;
+    height: 100vh;
+  }
+
+  .hero1 .container {
+    padding-bottom: 63px;
+  }
+
+  .hero1 h1 {
+    font-size: 28px;
+    line-height: 36px;
+  }
+
+  .hero1 h2 {
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 30px;
+  }
+}
+
+
+</style>
+
 <body>
 
   <!-- ======= Top Bar ======= -->
@@ -41,50 +108,50 @@
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
 
-      <a href="rdv.php" class="appointment-btn scrollto"><span class="d-none d-md-inline"> </span>Réserver
+      <a href="calendar.php" class="appointment-btn scrollto"><span class="d-none d-md-inline"> </span>Réserver
         une consultation</a>
 
     </div>
   </header><!-- End Header -->
 
-  
+   <!-- ======= Hero Section ======= -->
   <main>
 
     <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
       <div class="carousel-indicators">
         <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true"
           aria-label="Slide 1"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-        <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button type="button" data-bs-target="#myCarouse2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#myCarouse3" data-bs-slide-to="2" aria-label="Slide 3"></button>
       </div>
       <div class="carousel-inner">
-        <div id ="hero2" class="carousel-item active" style="background-image:url(about.jpg);height: 400px;">
+        <div class="carousel-item active hero1" style="background-image:url(assets/img/Dr.-Foye.jpg);background-size: cover; margin-bottom: 20px; width: 100%; height: 90vh;">
          
           <div class="container">
             <div class="carousel-caption text-start">
-              <h1>Example headline.</h1>
-              <p>Some representative placeholder content for the first slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
+               <h1>Bienvenue à l'hopital</h1>
+               <h2>Les meilleurs proffessionnels au service de votre santé</h2>
+              <a href="#event-list" class="btn-get-started scrollto">voir les dernieres nouvelles</a>
             </div>
           </div>
         </div>
-        <div id ="hero1" class="carousel-item " style="background-image: url(hero-bg.jpg);height: 600px;">
+        <div class="carousel-item hero1" style="background-image: url(assets/img/smiling-black-doctor-with-papers.jpg); background-size: cover; margin-bottom: 20px; width: 100%; height: 90vh;">
         
           <div class="container">
             <div class="carousel-caption">
-              <h1>Another example headline.</h1>
-              <p>Some representative placeholder content for the second slide of the carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
+              <h1>.</h1>
+              <h2>Satisfaire nos clients est une priorite.</h2>
+              <a href="#event-list" class="btn-get-started scrollto">voir les dernieres nouvelles</a>
             </div>
           </div>
         </div>
-        <div class="carousel-item" style="background-image:url(about.jpg);height: 400px;">
+        <div class="carousel-item hero1" style="background-image:url(assets/img/vraifemme.jpg);background-size: cover; margin-bottom: 20px; width: 100%; height: 90vh;">
          
           <div class="container">
             <div class="carousel-caption text-end">
-              <h1>One more for good measure.</h1>
-              <p>Some representative placeholder content for the third slide of this carousel.</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              <h1>.</h1>
+              <h2>Faites confiance a nos professionnel pour votre sante.</h2>
+              <a href="#event-list" class="btn-get-started scrollto">voir les dernieres nouvelles</a>
             </div>
           </div>
         </div>
@@ -98,16 +165,8 @@
         <span class="visually-hidden">Next</span>
       </button>
     </div>
-    </main>
+    </main><!-- End Hero -->
 
-  <!-- ======= Hero Section ======= -->
-  <section id="hero" class="d-flex align-items-center">
-    <div class="container">
-      <h1>Bienvenue à l'hopital</h1>
-      <h2>Les meilleurs proffessionnels au service de votre santé</h2>
-      <a href="#event-list" class="btn-get-started scrollto">voir les dernieres nouvelles</a>
-    </div>
-  </section><!-- End Hero -->
 
   <main id="main">
 
@@ -124,7 +183,7 @@
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="...">
+                <img src="assets/img/vraifemme.jpg" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title">Campagne de vaccination</h5>
@@ -138,7 +197,7 @@
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/gallery/gallery-2.jpg" alt="...">
+                <img src="assets/img/Dr.-Foye.jpg" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title">Campagne de sensibilisation</h5>
