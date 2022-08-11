@@ -85,6 +85,15 @@ include('includes/head.php');
                         <!-- <div class="validate"></div> -->
                     </div>
                 </div>
+                <div class="input-group date" data-provide="datepicker">
+                    <input type="text" class="form-control">
+                    <div class="input-group-addon">
+                        <span class="glyphicon glyphicon-th"></span>
+                    </div>
+                </div>
+
+                <div id="calendar"></div>
+                <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.5.1/moment.min.js"></script>
 
                 <!-- <div class="form-group mt-3">
                 <textarea class="form-control" name="description du problème" id="description" rows="5" placeholder="Message (Optional)"></textarea>

@@ -1,5 +1,5 @@
 <?php
-require('actions/rdv/database.php');
+require('actions/database.php');
 
 if (isset($_POST['valider'])) {
 
@@ -23,7 +23,8 @@ if (isset($_POST['valider'])) {
             $userInfos = $checkIfUserExist->fetch();
             var_dump($userInfos);
 
-            //On verifie si le mdp est correct
+            //On 
+            //verifie si le mdp est correct
             if ($user_password === $userInfos['mdp']) {
                 echo ('password correct');
 
