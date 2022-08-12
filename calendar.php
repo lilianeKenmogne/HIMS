@@ -360,7 +360,7 @@ include('includes/head.php');
 
         <div class="row">
            <div class="col-5 col-md-2 motif" >
-                <a href="">Vaccination</a>
+                <a href="" >Vaccination</a>
            </div>
            <div class="col-5 col-md-2  motif" >
               <a href="">Test COVID</a>
