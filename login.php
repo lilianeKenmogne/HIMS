@@ -7,7 +7,7 @@ require('actions/login/loginAction.php');
 
 <br /> <br />
 <form class="container" method="POST">
-    <?php
+    <?php  
     if (isset($errorMsg)) {
         echo $errorMsg;
     }
