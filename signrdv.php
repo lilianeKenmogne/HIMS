@@ -1,4 +1,7 @@
-<?php require('actions/rdv/signrdvAction.php');  ?>
+<?php
+ require ('actions/patients/securityAction.php'); 
+require('actions/rdv/signrdvAction.php'); 
+ ?>
 <!DOCTYPE html>
 <html lang="en">
 <?php  include("includes/head.php"); ?>
@@ -33,19 +36,19 @@
             <label for="exampleInputEmail" class="form-label" >Tranche horaire du rendez-vous :</label>
             <div class="horaires">
                 <div class="tranchehoraire">
-                  <input type="radio" value="1" name="Thoraire">
+                  <input type="radio" value="8h00-10h00" name="Thoraire">
                   <label class="form-label" >8h00-10h00</label>
                 </div>
                 <div class="tranchehoraire ">
-                  <input type="radio" value="2" name="Thoraire">
+                  <input type="radio" value="10h00-12h00" name="Thoraire">
                   <label class="form-label" >10h00-12h00</label>
                 </div>
                 <div class="tranchehoraire ">
-                  <input type="radio" value="3" name="Thoraire">
+                  <input type="radio" value="13h00-15h00" name="Thoraire">
                   <label class="form-label" >13h00-15h00</label>
                 </div>
                 <div class="tranchehoraire ">
-                  <input type="radio" value="4" name="Thoraire">
+                  <input type="radio" value="15h00-17h00" name="Thoraire">
                   <label class="form-label" >15h00-17h00</label>
                 </div>
                 

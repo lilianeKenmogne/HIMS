@@ -30,7 +30,7 @@
         </div>
         <button type="submit" class="btn btn-primary" name="validate">S'inscrire pour un rendez-vous</button>
         <br> <br>
-        <a href="login.php"> <p>J'ai deja un compte, je me connecte</p></a>
+        <a href="login-patient.php"> <p>J'ai deja un compte, je me connecte</p></a>
     </form>
 
 </body>
