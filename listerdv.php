@@ -94,7 +94,7 @@ include('includes/head.php');
                         </tr>
                         <?php
                         $i=2;
-                           while (($rdv = $getAllRdv -> fetch())) {
+                           while (($rdv = $getAllRdv -> fetch())  AND ($rdv['jourrdv'] =date ('d/m/Y'))) {
                          ?>
                          <tr>
                             <th scope="row"><?= $i; ?></th>
