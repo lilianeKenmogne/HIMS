@@ -1,19 +1,16 @@
 <?php
+
 require('actions/database.php');
+//Recuperer les rdv par defaut sans recherche
+$getAllRdv = $bdd -> query('SELECT jourrdv, Thoraire, email_autheur, id_autheur FROM rdv ORDER BY  id AND Thoraire DESC LIMIT 0,50');
 
-$date_jour_courant = date('d/m/Y');
-$rendezVousDuJour = $bdd->prepare('SELECT nom_visiteur,tel_visiteur,id_visiteur FROM visiteur v,rendezvous r Where v.id_visiteur = r.id_visiteur ');
-$rendezVousDuJour->execute();
-// $rendezVousDuJour->execute(["date_jour" => $date_jour_courant]);
-$liste_rdv_jour = $rendezVousDuJour->fetchAll();
-foreach ($liste_rdv_jour as $liste_rdv_jou) {
-    echo $liste_rdv_jou['nom_visiteur'];
+//verifier si la recherche a ete rentree par l'utilisateur
+if(isset($_GET['search']) AND !empty($_GET['search'])) {
+
+    //la recherche
+    $usersSearch = $_GET['search'];
+
+
+    //recuperer toutes les rdv qui correspondent a la recherche
+    $getAllRdvs = $bdd -> query('SELECT jourrdv, Thoraire, email_autheur, id_autheur FROM rdv WHERE id  LIKE "%'.$usersSearch.'%" ORDER BY id DESC');
 }
-var_dump($liste_rdv_jour);
-// $rendezVousDuJour = $bdd->prepare('SELECT id_visiteur FROM rendezvous WHERE date = 
-// $rendezVousDuJour->execute(array($date_jour_courant));
-
-// $liste_rdv_jour = $rendezVousDuJour->fetchAll();
-// var_dump($liste_rdv_jour);
-// foreach()
-// echo $date_jour_courant;

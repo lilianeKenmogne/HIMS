@@ -1,4 +1,7 @@
-<?php require('actions/rdv/listerdvAction.php'); ?>
+<?php
+session_start();
+require('actions/rdv/listeRdvAction.php');
+ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -58,20 +61,29 @@ include('includes/head.php');
     <!-- ======= Appointment Section ======= -->
     <section id="appointment" class="appointment section-bg">
         <div class="container">
-
-            <div class="section-title">
+           <div class="section-title">
                 <h2>Les Reservations du jour</h2>
-
             </div>
+            <form  method="GET">
+              <div class="form-group row">
+
+                 <div class="col-8">
+                    <input type="search" name="search" class="form-control">
+                 </div>
+                 <div class="col-4">
+                    <button class="btn btn-success" type="submit">Rechercher </button>
+                 </div>
+
+              </div>
+           </form>
             <div>
                 <table class="table">
                     <caption>Reservations du jour</caption>
                     <thead>
                         <tr>
                             <th scope="col">N°</th>
-                            <th scope="col">Noms et Prenoms</th>
-                            <th scope="col">Telephone</th>
-
+                            <th scope="col">Heure</th>
+                            <th scope="col">Email </th>
                         </tr>
                     </thead>
                     <tbody>
@@ -79,8 +91,21 @@ include('includes/head.php');
                             <th scope="row">1</th>
                             <td>Mark</td>
                             <td>Otto</td>
-
                         </tr>
+                        <?php
+                        $i=2;
+                           while (($rdv = $getAllRdv -> fetch())) {
+                         ?>
+                         <tr>
+                            <th scope="row"><?= $i; ?></th>
+                            <td><?= $rdv['Thoraire']; ?></td>
+                            <td><a href="edit-rdv.php?id=<?= $rdv['id']; ?>"><?= $rdv['email_autheur']; ?></a></td>
+                            
+                        </tr>
+                       <?php
+                       $i=$i+1;
+                          }
+                       ?>
 
                     </tbody>
                 </table>
@@ -94,3 +119,5 @@ include('includes/head.php');
     <?php include('includes/footer.php'); ?>
 
 </body>
+
+

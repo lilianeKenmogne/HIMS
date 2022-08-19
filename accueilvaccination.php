@@ -2,6 +2,9 @@
  if(isset($_POST['inscrirerdv'])) {
     header('Location: signup.php');
 }
+if(isset($_POST['accederrdv'])) {
+   header('Location: login-patient2.php');
+}
   ?>
 <!DOCTYPE html>
 <html lang="en">
