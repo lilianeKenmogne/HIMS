@@ -123,7 +123,7 @@ echo ('require okay'); ?>
 
         <div class="row">
            <div class="col-5 col-md-2 motif" >
-                <a href="">Vaccination</a>
+                <a href="accueilvaccination.php">Vaccination</a>
            </div>
            <div class="col-5 col-md-2  motif" >
               <a href="">Test COVID</a>
