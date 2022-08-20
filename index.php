@@ -71,7 +71,7 @@
           <div class="col-md-6 d-flex align-items-stretch">
             <div class="card">
               <div class="card-img">
-                <img src="assets/img/gallery/gallery-3.jpg" alt="...">
+                <img src="photo/img 07.jpg" alt="...">
               </div>
               <div class="card-body">
                 <h5 class="card-title">Campagne de vaccination</h5>
