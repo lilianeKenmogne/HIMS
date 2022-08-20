@@ -365,6 +365,9 @@ include('includes/head.php');
            <div class="col-5 col-md-2  motif" >
               <a href="">Test COVID</a>
            </div>
+           <div class="col-5 col-md-2  motif" >
+              <a href="forminscription.php">Test VIH</a>
+           </div>
            <div class="col-5 col-md-2 motif">
               <a href="">Bilan de sante</a>
            </div>
