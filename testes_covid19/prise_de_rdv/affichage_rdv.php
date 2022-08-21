@@ -137,7 +137,7 @@ $checkIfPatientExist -> execute (array($_SESSION));     */
 <section>
 
 <div class="header">
-	<h2>Inscription Patient</h2>
+	<h2  style=" text-align:center;">Inscription Patient</h2>
 </div>
 
 <table>
@@ -158,8 +158,8 @@ $checkIfPatientExist -> execute (array($_SESSION));     */
 //while (($patientInfos = $checkIfPatientExist -> fetch()) AND ($RdvInfos = $checkIfRdvExist -> fetch()) ){
 
 
-    while($row = $result->fetch());
-    while($rows = $result2->fetch()); //The good
+    while(($row = $result->fetch()) AND  ($rows = $result2->fetch()))
+   //The good
    // while ($row = $result2->fetch(PDO::FETCH_ASSOC));
     {   
 ?>

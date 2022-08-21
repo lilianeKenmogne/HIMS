@@ -1,4 +1,4 @@
-<?php require_once('../patient/inscription_patient.php') ?> 
+<?php //require_once('../patient/inscription_patient.php') ?> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -39,7 +39,7 @@
 		padding:10px;
 		padding-left:50px;
 		padding-right:50px;
-		margin-left:130px;
+		margin-left:120px;
 		margin-top:2px;
 	}
 
@@ -47,7 +47,7 @@
 		padding:10px;
 		padding-left:110px;
 		padding-right:100px;
-		margin-left:30px;
+		margin-left:10px;
 		margin-bottom:40%;
 	}
 
@@ -69,7 +69,7 @@
 		}
 
 		.form1{
-			margin-left: -10px;
+			margin-left: 0px;
 			margin-right:30px;
 			margin-bottom:3px;
 		}
